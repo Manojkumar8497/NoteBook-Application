@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css?family=Sen:400,700,800&display=swap");
+
+// Set your brand colors
+$purple: #b721ff;
+$purple-light: lighten($purple, 30%);
+$blue: #109bf9;
+$red: #ed1d24;
+$red-light: lighten($red, 40%);
+$light: #f6f6f6;
+$input: #ecf0f1;
+
+// Update Bulma's global variables
+$family-sans-serif: "Sen", sans-serif;
+$primary: lighten($purple, 25%);
+$info: lighten($blue, 25%);
+
+// Update some of Bulma's component variables
+$body-background-color: $light;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$input-background-color: $input;
+
+// Global Style
+html,
+body {
+  box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden !important;
+}

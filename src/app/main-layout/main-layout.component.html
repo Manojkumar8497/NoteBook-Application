@@ -1,0 +1,10 @@
+<div class="main-container" fxLayout="column" fxFlexFill="100%">
+    <!-- Toolbar -->
+    <div class="toolbar" fxLayoutAlign="center center">
+        <h1>NoteBook</h1>
+    </div>
+    <!-- Page content -->
+    <div class="page-content" fxFlex="1 0 1" [@routerAnimation]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+</div>

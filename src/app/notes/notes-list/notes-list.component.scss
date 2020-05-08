@@ -1,0 +1,27 @@
+@import "../../../main-style.scss";
+
+.notes-container {
+  max-width: 500px;
+  margin: auto;
+  .search-bar {
+    padding: 2rem 0;
+  }
+}
+
+.notes-list {
+  app-note-card {
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+
+.floating-add-button {
+  position: fixed;
+  bottom: 0;
+  width: 500px;
+  border-radius: 0;
+  box-shadow: 0px 0px 15px 5px rgba($purple, 0.2);
+  height: 50px;
+  font-size: 1.3rem;
+  border-radius: 0;
+}

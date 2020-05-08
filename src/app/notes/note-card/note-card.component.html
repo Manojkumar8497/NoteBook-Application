@@ -1,0 +1,17 @@
+<div class="note-card-container">
+    <!-- Note Cards -->
+    <div class="card" [routerLink]="noteData.title+'_'+noteId">
+        <div class="card-content">
+            <!-- Card Title -->
+            <div class="title">
+                <h1>{{noteData.title}}</h1>
+            </div>
+            <!-- Card Content -->
+            <div #contentText class="content">
+                <p>{{noteData.content}}</p>
+                <div #truncator class="fade-out-truncate"></div>
+            </div>
+        </div>
+        <div class="delete-btn" (click)="deleteNote()"></div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="form-container" fxLayout="column">
+    <form #noteForm="ngForm" (ngSubmit)="onSaveNote(noteForm)">
+        <!-- Title -->
+        <div class="field">
+            <label for="title">Title</label>
+            <div class="control">
+                <input id="title" class="input" type="text" placeholder="Title" autocomplete="off" name="title" [(ngModel)]="noteDetails.title" required>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="field">
+            <label for="content">Content</label>
+            <div class="control">
+                <textarea id="content" class="textarea" placeholder="Content" name="content" [(ngModel)]="noteDetails.content" required></textarea>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="is-grouped-btn is-pulled-right">
+            <!-- Cancel button -->
+            <div class="control">
+                <button type="button" class="button is-primary" routerLink="/">Cancel</button>
+            </div>
+            <!-- Save Button -->
+            <div class="control">
+                <button type="submit" class="button is-info" [disabled]="!noteForm.valid">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
